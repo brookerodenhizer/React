@@ -1,0 +1,26 @@
+{
+  "name": "react-counter",
+  "version": "1.0.0",
+  "description": "React-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brookerodenhizer/React.git"
+  },
+  "keywords": [
+    "React",
+    "app"
+  ],
+  "author": "Brooke Rodenhizer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brookerodenhizer/React/issues"
+  },
+  "homepage": "https://github.com/brookerodenhizer/React#readme",
+  "devDependencies": {
+    "package.json": "^2.0.1"
+  }
+}
