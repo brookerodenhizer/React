@@ -11,17 +11,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
     <script type="text/babel">
     class Greeting extends React.Component {
+
+      constructor(props){
+        super(props);
+        this.state = {
+          number: 1
+        }
+      }
+
       render() {
         return (
           <div>
-            <h1>Hello World!</h1>
+            <img src={this.props.image} alt="Eclipse"/>
+            <h1>Hello {this.props.name}!</h1>
+              <h2>Let us see what arises!</h2>
           </div>
         );
       }
     }
 
+    const info = {
+      date: new Date(),
+      image: 'https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/21056237_10159709766775497_8673520799574745744_o.jpg?oh=6ae8a9d59273ddedb10475fac36244f0&oe=5AEBDEA9',
+    }
+
+    Counter.defaultProps = {
+      label: "Brooke is trying to complete checkpoint 4"
+    }
+
     ReactDOM.render(
-      <Greeting />, document.getElementById('app')
+      <Greeting
+        date={info.date}
+        image={info.image}/>, document.getElementById('app')
     );
 
     </script>
